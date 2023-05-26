@@ -121,12 +121,20 @@
                               <textarea name="message" placeholder="Your Message *" required></textarea>
                             </div>
                             <div class="input-group">
-                              <button class="theme-btn submit-btn" type="submit" onclick="showSuccessMessage()">Send Message</button>
+                              <button class="theme-btn submit-btn" type="submit">Send Message</button>
                             </div>
                           </form>
                         </div>
                       </div>
-                                            
+                      
+                      <script>
+                        function showSuccessMessage() {
+                          var successMessage = document.querySelector(".messenger-box-contact__msg");
+                          successMessage.style.display = "block";
+                        }
+                      </script>
+                      
+                    </div>                         
                 </div>
             </div>
         </section>
